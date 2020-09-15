@@ -211,13 +211,16 @@ export default Vue.extend({
   margin-bottom: 20px;
 }
 .btn-row {
-  margin: 20px -10px;
+  margin: 10px -10px;
   .day-btn {
-    margin: 0 10px;
+    margin: 10px;
     color: rgba(0, 0, 0, 0.47) !important;
     &.active {
       color: rgba(0, 0, 0, 0.87) !important;
     }
   }
+}
+.data {
+  font-size: 14px;
 }
 </style>
