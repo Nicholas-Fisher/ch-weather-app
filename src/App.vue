@@ -150,6 +150,7 @@ export default Vue.extend({
     selectedCity() {
       this.$data.weatherInfoForSelectedCity = null;
       this.$data.forecastArrayForSelectedCity = [];
+      this.$data.showForecast = false;
       fetch(`https://api.openweathermap.org/data/2.5/weather?id=${this.$data.selectedCity.id}&appid=538882fc8387290c6cee83f313a6acf5&units=metric`)
         .then((response) => response.json())
         .then((data) => {
